@@ -1,0 +1,34 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+  "name": "com.hovercode/mcp",
+  "description": "Create and manage QR codes, short links, landing pages, and forms in your Hovercode workspace by chat.",
+  "version": "1.0.0",
+  "websiteUrl": "https://hovercode.com/integrations/mcp/",
+  "repository": {
+    "url": "https://github.com/Hovercode-Ltd/hovercode-mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://hovercode.com/mcp/"
+    }
+  ],
+  "packages": [
+    {
+      "registryType": "npm",
+      "registryBaseUrl": "https://registry.npmjs.org",
+      "identifier": "hovercode-mcp",
+      "version": "1.0.0",
+      "transport": { "type": "stdio" },
+      "environmentVariables": [
+        {
+          "name": "HOVERCODE_API_TOKEN",
+          "description": "Optional. Hovercode API token (https://hovercode.com/api/) to skip the OAuth browser flow.",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

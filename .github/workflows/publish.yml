@@ -1,0 +1,26 @@
+name: Publish to npm
+
+# Publishes when a GitHub release is created. Needs an NPM_TOKEN repo secret
+# (an npm "Automation" token) — or switch to npm Trusted Publishing and drop it.
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: read
+  id-token: write   # for npm provenance
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          registry-url: https://registry.npmjs.org
+      - run: npm install --no-audit --no-fund
+      - run: node bin/hovercode-mcp.js --help >/dev/null 2>&1 || true
+      - run: npm publish --access public --provenance
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

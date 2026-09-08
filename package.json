@@ -1,0 +1,48 @@
+{
+  "name": "hovercode-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for Hovercode: create and manage QR codes, short links, landing pages, and forms from Claude, Cursor, or any MCP client.",
+  "mcpName": "com.hovercode/mcp",
+  "bin": {
+    "hovercode-mcp": "bin/hovercode-mcp.js"
+  },
+  "files": [
+    "bin",
+    "server.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "qr-code",
+    "qr-codes",
+    "dynamic-qr-code",
+    "qr-code-generator",
+    "short-links",
+    "url-shortener",
+    "landing-pages",
+    "forms",
+    "analytics",
+    "claude",
+    "cursor",
+    "hovercode"
+  ],
+  "homepage": "https://hovercode.com/integrations/mcp/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hovercode-Ltd/hovercode-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Hovercode-Ltd/hovercode-mcp/issues"
+  },
+  "author": "Hovercode Ltd (https://hovercode.com)",
+  "license": "MIT",
+  "dependencies": {
+    "mcp-remote": "^0.1.0"
+  }
+}
