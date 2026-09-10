@@ -72,7 +72,8 @@ With no token set, the bridge opens a browser for the Hovercode OAuth login the 
 | Area | Tools |
 |------|-------|
 | Workspaces | `list_workspaces`, `set_workspace` |
-| QR codes | `create_qr_code`, `create_qr_codes_bulk`, `get_qr_code`, `list_qr_codes`, `update_qr_code` (retarget, restyle in place, rename), `delete_qr_code`, `download_qr` (print-ready PNG + SVG), `get_qr_activity`, `list_templates` |
+| QR codes | `create_qr_code` (URL, text, or vCard contact), `create_qr_codes_bulk`, `get_qr_code`, `list_qr_codes` (filter by folder, include tags + scan counts), `update_qr_code` (retarget, restyle in place, rename, move to folder, add/remove tags), `delete_qr_code`, `download_qr` (print-ready PNG + SVG), `get_qr_activity`, `list_templates` (with design details) |
+| Organisation | `list_folders`, `create_folder`, `update_folder` (rename / move), `delete_folder` (codes become unfiled), `list_tags` |
 | PDF codes | `create_pdf_qr` — host a PDF (URL or base64) behind a dynamic QR + short link; swap it later without reprinting |
 | Analytics | `get_analytics` — totals, by-day trend, top countries/cities/OS/browsers for one code or a whole workspace |
 | Short links | `create_short_link`, `get_short_link`, `list_short_links`, `update_short_link`, `delete_short_link`, `get_short_link_activity` |
@@ -87,6 +88,8 @@ With no token set, the bridge opens a browser for the Hovercode OAuth login the 
 - "Make a landing page for our launch event with the schedule, a map link, and a sign-up form, and give me a QR for the posters."
 - "Make QR codes for all 20 of these product URLs, all in the same style."
 - "Make a form to collect name, email, and t-shirt size, and give me a link and QR to share it."
+- "Make a Spring 2026 folder under Campaigns and move these five codes into it."
+- "Tag every code in the Menus folder with 'print'."
 - "Summarize this week's responses to my feedback form."
 - "How did my QR codes do this month, and where were people scanning them?"
 
