@@ -1,6 +1,6 @@
 {
   "name": "hovercode-mcp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "MCP server for Hovercode: create and manage QR codes, short links, landing pages, and forms from Claude, Cursor, or any MCP client.",
   "mcpName": "com.hovercode/mcp",
   "bin": {
