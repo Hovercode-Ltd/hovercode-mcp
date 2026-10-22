@@ -1,0 +1,10 @@
+{
+  "name": "hovercode",
+  "version": "1.0.1",
+  "description": "Create and manage QR codes, short links, landing pages, and forms in your Hovercode workspace.",
+  "mcpServers": {
+    "hovercode": {
+      "httpUrl": "https://hovercode.com/mcp/"
+    }
+  }
+}
